@@ -3,6 +3,23 @@
   <groupId>seleniumpractice</groupId>
   <artifactId>seleniumpractice</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.11.0</version>
+            <configuration>
+                <source>21</source>   <!-- or 11,17 -->
+                <target>21</target>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+<properties>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
+</properties>
   <dependencies>
 	  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
