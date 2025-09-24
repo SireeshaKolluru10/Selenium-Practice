@@ -14,10 +14,10 @@ public class UsingKeys {
 		driver.get("https://text-compare.com/");
 		driver.findElement(By.xpath("//textarea[@name='text1']")).sendKeys("Good Night!!!");
 		Actions act=new Actions(driver);
-		act.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).perform();
-		act.keyDown(Keys.CONTROL).sendKeys("c").keyUp(Keys.CONTROL).perform();
-		act.keyDown(Keys.TAB).keyUp(Keys.TAB).perform();
-		act.keyDown(Keys.CONTROL).sendKeys("v").keyUp(Keys.CONTROL).perform();
+		act.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).
+		keyDown(Keys.CONTROL).sendKeys("c").keyUp(Keys.CONTROL).
+		keyDown(Keys.TAB).keyUp(Keys.TAB).
+		keyDown(Keys.CONTROL).sendKeys("v").keyUp(Keys.CONTROL).perform();
 		}
 
 }
